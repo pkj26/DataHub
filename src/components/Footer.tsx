@@ -130,6 +130,41 @@ export const Footer: React.FC<FooterProps> = ({
 
         </div>
 
+        {/* SEO Trending Searches & Keywords Cluster for Google First Page Indexing */}
+        <div className="pt-6 border-t border-slate-800/80 space-y-3">
+          <h5 className="text-[11px] font-black uppercase text-slate-400 tracking-wider">
+            Popular B2B Search Trends in India
+          </h5>
+          <div className="flex flex-wrap gap-2 text-[10px] text-slate-400">
+            {[
+              'Indian Companies Database',
+              'B2B Decision Makers Data India',
+              'CEO CFO Contact Number India',
+              'MCA Registered Companies List',
+              'GSTIN Verified Business Directory',
+              'HNI & Ultra HNI Database India',
+              'JEE NEET Student Contact List',
+              'Doctor Leads India Database',
+              'IT Employees Contact Database',
+              'WhatsApp Number Database India',
+              'Mumbai B2B Corporate Directory',
+              'Delhi NCR Company Database',
+              'Bangalore Startup Database',
+              'Hyderabad IT Exporters List',
+              'FMCG Distributors Database',
+              'DPDP Act 2023 Compliant Data',
+            ].map((keyword, i) => (
+              <span
+                key={i}
+                onClick={() => setActiveTab?.('companies')}
+                className="bg-slate-800/80 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700/60 cursor-pointer transition-colors"
+              >
+                {keyword}
+              </span>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom Disclaimer */}
         <div className="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
           <p>© 2026 India Business Directory. All company data is self-submitted / opt-in under DPDP Act 2023.</p>

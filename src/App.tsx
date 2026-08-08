@@ -9,6 +9,7 @@ import { PricingPlansView } from './components/PricingPlansView';
 import { BlogHub } from './components/BlogHub';
 import { LegalPrivacyView } from './components/LegalPrivacyView';
 import { Footer } from './components/Footer';
+import { SEO } from './components/SEO';
 import { ActiveTab } from './types';
 
 export default function App() {
@@ -28,6 +29,13 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#f4f8fe] text-slate-800 font-sans selection:bg-blue-600 selection:text-white flex flex-col antialiased">
+      {/* Dynamic SEO Meta & Document Head Updater for Google India Ranking */}
+      <SEO
+        activeTab={activeTab}
+        selectedCity={selectedCity}
+        selectedIndustry={selectedIndustry}
+      />
+
       {/* Universal Top Header Navigation */}
       <Header activeTab={activeTab} setActiveTab={setActiveTab} />
 

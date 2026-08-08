@@ -1,0 +1,8 @@
+# Robots.txt for Indian Databases B2B Directory & Decision Makers Portal
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Host & Sitemap Specification
+Host: https://indiandatabases.com
+Sitemap: https://indiandatabases.com/sitemap.xml
