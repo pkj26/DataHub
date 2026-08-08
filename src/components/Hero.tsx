@@ -164,7 +164,7 @@ export const Hero: React.FC<HeroProps> = ({
     <div className="bg-gradient-to-b from-[#e3edf9] via-[#eaf3fc] to-[#f4f8fe] text-slate-800 font-sans min-h-screen relative overflow-x-hidden">
       
       {/* Exact Hero Section matching the Screenshot */}
-      <section className="pt-8 sm:pt-12 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="pt-8 sm:pt-12 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           {/* Left Column: Heading, Subheading & Requirement CTA */}
