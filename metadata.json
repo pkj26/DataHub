@@ -1,0 +1,6 @@
+{
+  "name": "India Business Directory",
+  "description": "Verified B2B company & decision-maker directory across Indian cities and industries with DPDP compliance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
